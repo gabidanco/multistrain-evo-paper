@@ -1,5 +1,5 @@
 # Code developed by Gabriella Dantas Franco and Denise Cammarota
-# Exploring the effect of waning immunity, including coinfection model
+# Exploring the effect of waning immunity, no coinfection model
 
 import numpy as np
 from operator import matmul
@@ -69,7 +69,7 @@ plt.xlabel('Time (days)', fontsize = 18)
 plt.ylabel(r'$I_i$', fontsize = 18)
 plt.xticks(fontsize = 16)
 plt.yticks(fontsize = 16)
-plt.savefig('figs/4_EpiCurves_1000.pdf')
+plt.savefig('figs/3_EpiCurves_1000.pdf')
 plt.show()
 
 
@@ -91,7 +91,7 @@ for i in range(pars['nv']):
 
 plt.xlabel('Time (days)', fontsize = 14)
 plt.ylabel(r'$\frac{I_i}{I_T}$', fontsize = 14, rotation = 0, labelpad=16)
-plt.savefig('figs/4_FreqCurves_1000.pdf')
+plt.savefig('figs/3_FreqCurves_1000.pdf')
 plt.show()
 #plt.legend()
 
@@ -104,7 +104,7 @@ plt.xlabel('Time (days)', fontsize = 18)
 plt.ylabel(r'$n_t$', fontsize = 18)
 plt.xticks(fontsize = 16)
 plt.yticks(fontsize = 16)
-plt.savefig('figs/4_NumberVariants_1000.pdf')
+plt.savefig('figs/3_NumberVariants_1000.pdf')
 plt.show()
 
 ### Visualization 4: R0 of the ones on the population for each time 
@@ -137,7 +137,7 @@ plt.ylabel(r'$R_0$', fontsize = 18)
 plt.xticks(fontsize = 16)
 plt.yticks(fontsize = 16)
 plt.legend(fontsize = 16)
-plt.savefig('figs/4_ValuesR0_1000.pdf')
+plt.savefig('figs/3_ValuesR0_1000.pdf')
 plt.show()
 
 ### Visualization 5: R0 and frequency at endemic state
@@ -150,7 +150,7 @@ plt.ylabel(r'$\frac{I_i}{I_T}$', fontsize = 28, rotation = 0, labelpad=16)
 plt.xticks(fontsize = 16)
 plt.yticks(fontsize = 16)
 plt.legend(fontsize = 16)
-plt.savefig('figs/4_ValuesR0_1000.pdf')
+plt.savefig('figs/3_ValuesR0Freq_1000.pdf')
 plt.show()
 
 
