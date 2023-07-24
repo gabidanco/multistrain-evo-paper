@@ -50,7 +50,7 @@ x0[pars['nv'] : 2*pars['nv']] = pars['I0']/pars['N']
 # Solving with different hypotesis
 
 ## With coinfection (original models)
-t = np.arange(0.0, 800, 0.1)
+t = np.arange(0.0, 120, 0.1)
 sol1 = odeint(Dyn_strains_M_CI_mut, x0, t, args =(pars,))
 
 ### Visualization 1
@@ -64,7 +64,7 @@ plt.xlabel('Time (days)', fontsize = 18)
 plt.ylabel(r'$I_i$', fontsize = 18)
 plt.xticks(fontsize = 16)
 plt.yticks(fontsize = 16)
-plt.savefig('figs/1_EpiCurves.pdf')
+#plt.savefig('figs/1_EpiCurves.pdf')
 plt.show()
 
 
