@@ -58,7 +58,7 @@ plt.figure(figsize=(10,8))
 for i in range(pars['nv']):
     #plt.plot(t, sol[:, i], label = '$S_{%i}$' % i)
     #plt.plot(t, sol1[:, i], label = '$S_{%i}$' % i)
-    plt.plot(t[:], sol1[:, pars['nv']+i], label = '$I_{%i}$' % (i+1), linewidth = 3)
+    plt.plot(t[:], sol[:, pars['nv']+i], label = '$I_{%i}$' % (i+1), linewidth = 3)
 #plt.legend(loc='best', fontsize = 14)
 plt.xlabel('Time (days)', fontsize = 18)
 plt.ylabel(r'$I_i$', fontsize = 18)
@@ -74,8 +74,8 @@ plt.show()
 St = np.zeros((pars['nv'], len(t)))
 It = np.zeros((pars['nv'], len(t)))
 for j in range(pars['nv']):
-    St[j] = sol1[:, j]
-    It[j] = sol1[:, pars['nv']+j]
+    St[j] = sol[:, j]
+    It[j] = sol[:, pars['nv']+j]
 
 plt.figure(figsize=(20,6))
 cmap = 'inferno'
