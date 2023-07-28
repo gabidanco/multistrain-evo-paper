@@ -55,7 +55,7 @@ x0[2*pars['nv'] :] = pars['R0']
 # Solving with different hypotesis
 
 ## With coinfection (original models)
-t = np.arange(0.0, 3000, 0.1)
+t = np.arange(0.0, 800, 0.1)
 sol1 = odeint(PCI_Mut_coinf_waning, x0, t, args =(pars,))
 
 ### Visualization 1

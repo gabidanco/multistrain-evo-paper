@@ -54,7 +54,7 @@ x0[pars['nv'] : 2*pars['nv']] = pars['I0']/pars['N']
 # Solving with different hypotesis
 
 ## With coinfection (original models)
-t = np.arange(0.0, 800, 0.1)
+t = np.arange(0.0, 1000, 0.1)
 sol1 = odeint(Strains_CI_mut_nocoinf, x0, t, args =(pars,))
 
 ### Visualization 1

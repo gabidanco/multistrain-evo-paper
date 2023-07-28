@@ -17,6 +17,7 @@ def Dyn_strains_M_CI_mut(x, t, parms):
     nv = parms['nv']
     S = x[ : nv]
     I = x[nv : 2*nv]
+    I[np.where(I < 1/parms['N'])] = 0
     #R = x[2*nv : ]
 
     mu = parms['mu']
